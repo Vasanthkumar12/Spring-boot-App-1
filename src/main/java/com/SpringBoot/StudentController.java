@@ -29,6 +29,8 @@ public class StudentController {     /*Jackson file la O/P venum na POJO class(S
 		students.add(new Student("Siva","Prakash"));
 		students.add(new Student("Karthi","Keyan"));
 		students.add(new Student("Ranjith","Sharma"));
+		students.add(new Student("Rith","rma"));
+		
 		return students;
 	}
 	//PathVariable annotation
@@ -51,7 +53,7 @@ public class StudentController {     /*Jackson file la O/P venum na POJO class(S
 	public Student getRequestParam(
 			@RequestParam(name="firstName")String fName,
 			@RequestParam(name="lastName")String lName) {
-		return new Student(fName,lName);
+		return new Student(fName,lName); 
 		
 	}
 }
